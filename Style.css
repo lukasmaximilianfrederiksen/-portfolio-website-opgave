@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Fjern Margin og Padding for nemmere at costumize selv */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style navigationsbar og placer content. */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blue;
+  color: black;
+}
+
+/* Opgave navn (LOGO) */
+.opgaveNavn {
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+/* Giv mine list items display flex for at kunne styrer hvordan de ligger i forhold
+til hvordan de ligger ved hinanden */
+.navbar .navLinks ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar .navLinks li {
+  list-style: none;
+}
+
+.navbar .navLinks li a {
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+}
