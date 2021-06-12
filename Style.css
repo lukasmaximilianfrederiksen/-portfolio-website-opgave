@@ -1,36 +1,66 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* Fjern Margin og Padding for nemmere at costumize selv */
 body {
   margin: 0;
   padding: 0;
-  background-color: #666;
+  background-color: #222;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
 }
 
+img {
+  max-width: 100%;
+}
+
+.forsideTitel {
+  margin: 1rem;
+  text-transform: uppercase;
+  font-size: clamp(3rem, 10vw, 7rem);
+  line-height: 1;
+}
+
+.forsideUndertitel {
+  margin: 1rem;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.forsideIntroTekst {
+  margin: 1rem;
+  max-width: 60ch;
+}
+p {
+  color: white;
+}
 /* Style navigationsbar og placer content. */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #222;
+  background-color: #333;
   color: white;
 }
 
 /* Opgave navn (LOGO) */
 .opgaveNavn {
   font-size: 2rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-left: 1rem;
 }
 
 /* Giv mine list items display flex for at kunne styrer hvordan de ligger i forhold
 til hvordan de ligger ved hinanden */
 .navbar .navLinks ul {
-  margin: 2rem;
   padding: 0;
   display: flex;
+}
+
+.navbar ul {
+  position: absolute;
 }
 
 .navbar .navLinks li {
@@ -54,7 +84,7 @@ til hvordan de ligger ved hinanden */
 .burgerKnap {
   position: absolute;
   right: 1rem;
-  top: 1rem;
+  top: 1.3rem;
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -78,20 +108,22 @@ til hvordan de ligger ved hinanden */
     width: 100%;
     display: none;
     opacity: 0;
+    background-color: #222;
+    top: 3.5rem;
   }
 
   .skjult {
     animation-name: fadeInd;
-
     display: flex;
-    height: 100vh;
+    height: 100%;
     transition: 1s ease-out;
-    animation-duration: 2s;
+    animation-duration: 500ms;
     animation-iteration-count: 1;
     animation-direction: alternate;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
     animation-delay: 100ms;
+    position: absolute;
   }
 
   @keyframes fadeInd {
@@ -124,6 +156,7 @@ til hvordan de ligger ved hinanden */
 h1 {
   font-family: "Poppins", sans-serif;
   align-self: flex-end;
+  color: white;
 }
 
 .frontPageWrapperDark {
@@ -165,4 +198,28 @@ h1 {
   z-index: 10;
   transform: translateY(10vh);
   transition: ease-in-out 400ms;
+}
+
+.projectsImgWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.imgTopLeft {
+}
+
+.imgTopRight {
+}
+
+.imgBotLeft {
+}
+
+.imgBotRight {
+}
+
+@media (min-width: 600px) {
+  .forsideIntroTekst {
+    max-width: 100ch;
+  }
 }
