@@ -6,6 +6,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #666;
 }
 
 /* Style navigationsbar og placer content. */
@@ -13,45 +14,47 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: blue;
+  background-color: #222;
   color: white;
-  height: 3rem;
 }
 
 /* Opgave navn (LOGO) */
 .opgaveNavn {
   font-size: 2rem;
-  margin: 2rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
 }
 
 /* Giv mine list items display flex for at kunne styrer hvordan de ligger i forhold
 til hvordan de ligger ved hinanden */
 .navbar .navLinks ul {
-  margin: 0;
+  margin: 2rem;
   padding: 0;
   display: flex;
 }
 
 .navbar .navLinks li {
   list-style: none;
+  padding: 2rem;
 }
 
 .navbar .navLinks li a {
   text-decoration: none;
   color: white;
-
   display: block;
   padding: 0.9rem;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .navbar .navLinks li:hover {
-  background-color: blueviolet;
+  background-color: #444;
 }
 
 .burgerKnap {
   position: absolute;
-  top: 0.7;
   right: 1rem;
+  top: 1rem;
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -72,6 +75,94 @@ til hvordan de ligger ved hinanden */
   }
 
   .navLinks {
+    width: 100%;
     display: none;
+    opacity: 0;
   }
+
+  .skjult {
+    animation-name: fadeInd;
+
+    display: flex;
+    height: 100vh;
+    transition: 1s ease-out;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 100ms;
+  }
+
+  @keyframes fadeInd {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .navLinks li {
+    text-align: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navLinks ul {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+/* -------------------FRONT PAGE MOBIL------------- */
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  align-self: flex-end;
+}
+
+.frontPageWrapperDark {
+  display: flex;
+  height: 100vw;
+  width: 100vw;
+  justify-content: end;
+  background-color: #444;
+}
+
+.frontPageWrapperDark .darkSide {
+  background-color: #444;
+  height: auto;
+  width: 100vw;
+  display: flex;
+}
+
+.frontPageWrapperWhite {
+  background-color: white;
+  display: flex;
+  height: 100vw;
+  width: 100vw;
+}
+
+.frontPageWrapperWhite .whiteSide {
+  background-color: white;
+  height: auto;
+  width: 100vw;
+  display: flex;
+}
+
+.whiteSide:hover {
+  z-index: 10;
+  transform: translateY(-100px);
+  transition: ease-in-out 400ms;
+}
+
+.darkSide:hover {
+  z-index: 10;
+  transform: translateY(10vh);
+  transition: ease-in-out 400ms;
 }
