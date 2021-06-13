@@ -4,6 +4,6 @@ const links = document.querySelector(".navLinks");
 knap.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
-  console.log("toggleMenu");
+  // console.log("toggleMenu");
   links.classList.toggle("skjult");
 }
