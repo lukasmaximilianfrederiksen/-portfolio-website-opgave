@@ -1,8 +1,12 @@
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  max-width: 100vh;
 }
 
+html {
+  max-width: 100vh;
+}
 /* Fjern Margin og Padding for nemmere at costumize selv */
 body {
   margin: 0;
@@ -21,6 +25,7 @@ img {
   text-transform: uppercase;
   font-size: clamp(3rem, 10vw, 7rem);
   line-height: 1;
+  margin-top: 4rem;
 }
 
 .forsideUndertitel {
@@ -33,16 +38,23 @@ img {
   margin: 1rem;
   max-width: 60ch;
 }
+
 p {
   color: white;
+  font-size: 0.9rem;
 }
 /* Style navigationsbar og placer content. */
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #333;
   color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
 }
 
 /* Opgave navn (LOGO) */
@@ -55,30 +67,31 @@ p {
 /* Giv mine list items display flex for at kunne styrer hvordan de ligger i forhold
 til hvordan de ligger ved hinanden */
 .navbar .navLinks ul {
-  padding: 0;
+  padding: 1rem;
   display: flex;
+  justify-content: space-evenly;
 }
 
 .navbar ul {
-  position: absolute;
+  background-color: #222;
 }
 
 .navbar .navLinks li {
   list-style: none;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .navbar .navLinks li a {
   text-decoration: none;
   color: white;
   display: block;
-  padding: 0.9rem;
-  font-size: 2rem;
+  padding: 0.3rem;
+  font-size: 1.5rem;
   font-family: "Montserrat", sans-serif;
 }
 
 .navbar .navLinks li:hover {
-  background-color: #444;
+  background-color: #666;
 }
 
 .burgerKnap {
@@ -99,7 +112,7 @@ til hvordan de ligger ved hinanden */
   border-radius: 5px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .burgerKnap {
     display: flex;
   }
@@ -107,23 +120,23 @@ til hvordan de ligger ved hinanden */
   .navLinks {
     width: 100%;
     display: none;
+    height: 100%;
     opacity: 0;
     background-color: #222;
-    top: 3.5rem;
+    top: 2rem;
   }
 
   .skjult {
     animation-name: fadeInd;
     display: flex;
-    height: 100%;
+    height: 100vh;
     transition: 1s ease-out;
     animation-duration: 500ms;
     animation-iteration-count: 1;
     animation-direction: alternate;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-in;
     animation-fill-mode: forwards;
     animation-delay: 100ms;
-    position: absolute;
   }
 
   @keyframes fadeInd {
@@ -136,6 +149,9 @@ til hvordan de ligger ved hinanden */
     }
   }
 
+  /* Her kan der laves ekstra animation som kaldes på
+list items */
+
   .navLinks li {
     text-align: center;
   }
@@ -143,6 +159,7 @@ til hvordan de ligger ved hinanden */
   .navbar {
     flex-direction: column;
     align-items: flex-start;
+    z-index: 10;
   }
 
   .navLinks ul {
@@ -201,25 +218,171 @@ h1 {
 }
 
 .projectsImgWrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-direction: column;
 }
 
 .imgTopLeft {
+  background-image: url(billeder/0_7.jpg);
+  background-size: cover;
+  padding: 8rem 0 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 1rem;
+  max-width: 45ch;
 }
 
 .imgTopRight {
+  background-image: url(billeder/0_7.jpg);
+  background-size: cover;
+  padding: 8rem 0 0;
+  max-width: 45ch;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 1rem;
 }
 
 .imgBotLeft {
+  background-image: url(billeder/0_7.jpg);
+  background-size: cover;
+  padding: 8rem 0 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 1rem;
+  max-width: 45ch;
 }
 
 .imgBotRight {
+  background-image: url(billeder/0_7.jpg);
+  background-size: cover;
+  padding: 8rem 0 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 1rem;
+  max-width: 45ch;
 }
 
 @media (min-width: 600px) {
   .forsideIntroTekst {
     max-width: 100ch;
   }
+  .projectsImgWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .imgTopLeft {
+    grid-column: 1;
+    margin: 0;
+    margin-left: 1rem;
+    max-width: 35ch;
+    transition: transform 200ms ease;
+  }
+
+  .imgTopLeft:hover {
+    transform: scale(1.05);
+  }
+
+  .imgTopRight {
+    grid-column: 2;
+    margin: 0;
+    max-width: 35ch;
+    margin-right: 1rem;
+    transition: transform 200ms ease;
+  }
+
+  .imgTopRight:hover {
+    transform: scale(1.05);
+  }
+
+  .imgBotLeft {
+    grid-column: 1;
+    margin: 0;
+    margin-left: 1rem;
+    max-width: 35ch;
+    transition: transform 200ms ease;
+  }
+
+  .imgBotLeft:hover {
+    transform: scale(1.05);
+  }
+
+  .imgBotRight {
+    grid-column: 2;
+    margin: 0;
+    margin-right: 1rem;
+    max-width: 35ch;
+    transition: transform 200ms ease;
+  }
+
+  .imgBotRight:hover {
+    transform: scale(1.05);
+  }
+}
+
+/* ------------------BillederForside------------------------- */
+
+.Projects p {
+  font-size: 0.7rem;
+  padding-bottom: 1rem;
+  color: rgb(255, 255, 255, 0.9);
+}
+
+.Projects h3 {
+  font-size: 2rem;
+
+  color: WHITE;
+}
+
+.BilledeContent {
+  padding: 2em;
+  background: linear-gradient(
+    hsl(0 0% 0% / 0),
+    hsl(30 0% 0% / 0.4) 25%,
+    hsl(0 0% 0% /1)
+  );
+}
+
+.knap1 {
+  cursor: pointer;
+  display: inline;
+  text-decoration: none;
+  color: #000;
+  background-color: #39d16c;
+  padding: 0.4em 1.1em;
+  border-radius: 0.5rem;
+}
+
+.knap2 {
+  cursor: pointer;
+  display: inline;
+  text-decoration: none;
+  color: #000;
+  background-color: #39d16c;
+  padding: 0.5em 1.1em;
+  border-radius: 0.5rem;
+}
+
+.knap3 {
+  cursor: pointer;
+  display: inline;
+  text-decoration: none;
+  color: #000;
+  background-color: #39d16c;
+  padding: 0.5em 1.1em;
+  border-radius: 0.5rem;
+}
+
+.knap4 {
+  cursor: pointer;
+  display: inline;
+  text-decoration: none;
+  color: #000;
+  background-color: #39d16c;
+  padding: 0.5em 1.1em;
+  border-radius: 0.5rem;
 }
