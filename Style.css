@@ -73,6 +73,7 @@ footer {
 p {
   color: white;
   font-size: 0.9rem;
+  font-family: "Montserrat", sans-serif;
 }
 /* Style navigationsbar og placer content. */
 
@@ -405,7 +406,7 @@ h1 {
     z-index: 10;
   }
   .navbar .navLinks {
-    flex-direction: end;
+    flex-direction: column;
   }
 
   .forsideUndertitel {
@@ -561,31 +562,165 @@ h1 {
   margin-top: 8rem;
 }
 
-@media (min-width: 800px) {
+.omMigTopWrapper h1 {
+  font-size: clamp(3rem, 10vw, 4rem);
+  line-height: 3rem;
+  margin-left: 1rem;
+}
+
+.omMigTopWrapper p {
+  font-size: clamp(1rem, 5vw, 2rem);
+  margin-top: -1rem;
+  margin-left: 1rem;
+}
+
+.omMigTekstWrapper h2 {
+  font-size: clamp(2rem, 10vw, 3rem);
+  line-height: 3rem;
+  color: WHITE;
+}
+
+.omMigTekstWrapper {
+  margin: 1rem;
+}
+
+@media (min-width: 1000px) {
+  .omMigBilledeWrapper img {
+    max-width: 30vw;
+    max-height: 80vh;
+  }
+
+  .omMigTekstWrapper {
+    max-width: 60ch;
+  }
+  .omMigTopWrapper h1 {
+    margin-left: 0;
+  }
+
+  .omMigTopWrapper p {
+    margin-left: 0;
+  }
+
+  .omMigTekstWrapper h2 {
+    margin: 0;
+  }
+
+  .omMigSectionWrapper {
+    display: flex;
+    gap: 7rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  MAIN {
+    margin-left: 10rem;
+  }
+
+  .omMigBilledeWrapper img {
+    max-width: 50vw;
+    max-height: 80vh;
+  }
+}
+
+main {
+  margin-top: 13rem;
 }
 
 /* ------------------------------Tema 2-------------------------------------------- */
-main {
-  margin-top: 10rem;
+.tema2H1 h1 {
+  font-size: clamp(3rem, 10vw, 4rem);
+  line-height: 3rem;
+  margin-left: 1rem;
 }
-.tema2Intro {
-  margin-top: 3rem;
+
+.tema2Intro p {
+  font-size: clamp(1rem, 5vw, 2rem);
+  margin-top: -1rem;
+  margin-left: 1rem;
+}
+
+.tema2Intro h2 {
+  font-size: clamp(2rem, 10vw, 3rem);
+  line-height: 3rem;
+  color: WHITE;
+}
+
+.tema2DokumentationTekst {
+  margin: 1rem;
+}
+
+.tema2DokumentationTekst h2 {
+}
+
+.tema2DokumentationTekst p {
 }
 
 @media (min-width: 800px) {
+  .tema2MainGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+  }
+
+  .tema2TopWrapper {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .tema2H1 h1 {
+    line-height: 4rem;
+  }
+
+  .tema2ImgTopWrapper {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .tema2BotWrapper {
+    margin-top: 4rem;
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .tema2ImgBotWrapper {
+    margin-top: 4rem;
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
+
+@media (min-width: 500px) {
+  .tema2H1 h1 {
+    line-height: 4rem;
+  }
 }
 
 /* ------------------------------Tema 3-------------------------------------------- */
 
 @media (min-width: 800px) {
+  .tema3MainGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
 /* ------------------------------Tema 4-------------------------------------------- */
 
 @media (min-width: 800px) {
+  .tema4MainGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
 /* ------------------------------Tema 5-------------------------------------------- */
 
 @media (min-width: 800px) {
+  .tema5MainGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
