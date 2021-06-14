@@ -235,6 +235,7 @@ h1 {
   overflow: hidden;
   margin: 1rem;
   max-width: 45ch;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.37);
 }
 
 .imgTopRight {
@@ -245,6 +246,7 @@ h1 {
   border-radius: 1rem;
   overflow: hidden;
   margin: 1rem;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.37);
 }
 
 .imgBotLeft {
@@ -256,6 +258,7 @@ h1 {
   overflow: hidden;
   margin: 1rem;
   max-width: 45ch;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.37);
 }
 
 .imgBotRight {
@@ -267,6 +270,7 @@ h1 {
   overflow: hidden;
   margin: 1rem;
   max-width: 45ch;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.37);
 }
 
 .projektTekst {
