@@ -8,13 +8,20 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #222;
+  background-color: #111;
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
 }
 
 img {
   max-width: 100%;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 .titler {
   margin-left: 2rem;
@@ -55,7 +62,14 @@ img {
   max-width: 60ch;
   margin-left: 2rem;
 }
+.opgaveNavn p {
+  font-size: 2rem;
+}
 
+.opgaveNavn a {
+  text-decoration: none;
+  color: white;
+}
 p {
   color: white;
   font-size: 0.9rem;
@@ -66,7 +80,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #222;
+  background-color: #111;
   color: white;
   position: fixed;
   top: 0;
@@ -90,7 +104,7 @@ til hvordan de ligger ved hinanden */
 }
 
 .navbar ul {
-  background-color: #222;
+  background-color: #111;
 }
 
 .navbar .navLinks li {
@@ -443,6 +457,7 @@ h1 {
   .Projects {
     display: grid;
     justify-content: center;
+    margin-bottom: 2rem;
   }
 
   .projectsImgWrapper {
@@ -450,6 +465,7 @@ h1 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 2rem;
+    margin-left: 1rem;
   }
 
   .projektTekstWrapper {
@@ -500,6 +516,8 @@ h1 {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 2rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
   }
 
   .projektTekstWrapper {
@@ -512,23 +530,62 @@ h1 {
     grid-column: 2;
     grid-row: 1;
     max-width: 50ch;
+    margin-left: 3rem;
   }
 
   .imgTopRight {
     grid-column: 3;
     grid-row: 1;
     max-width: 50ch;
+    margin-left: 3rem;
   }
 
   .imgBotLeft {
     grid-column: 2;
     grid-row: 2;
     max-width: 50ch;
+    margin-left: 3rem;
   }
 
   .imgBotRight {
     grid-column: 3;
     grid-row: 2;
     max-width: 50ch;
+    margin-left: 3rem;
   }
+}
+
+/* ------------------------------Om mig-------------------------------------------- */
+
+.omMigTopWrapper {
+  margin-top: 8rem;
+}
+
+@media (min-width: 800px) {
+}
+
+/* ------------------------------Tema 2-------------------------------------------- */
+main {
+  margin-top: 10rem;
+}
+.tema2Intro {
+  margin-top: 3rem;
+}
+
+@media (min-width: 800px) {
+}
+
+/* ------------------------------Tema 3-------------------------------------------- */
+
+@media (min-width: 800px) {
+}
+
+/* ------------------------------Tema 4-------------------------------------------- */
+
+@media (min-width: 800px) {
+}
+
+/* ------------------------------Tema 5-------------------------------------------- */
+
+@media (min-width: 800px) {
 }
