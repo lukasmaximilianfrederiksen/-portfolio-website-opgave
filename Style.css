@@ -331,8 +331,9 @@ h1 {
   color: rgb(255, 255, 255, 0.9);
 }
 
-.projektTekst {
-}
+/* .projektTekst {
+} */
+
 .Projects h3 {
   font-size: 2rem;
 
@@ -613,7 +614,8 @@ h1 {
 
 @media (min-width: 1200px) {
   MAIN {
-    margin-left: 10rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
   }
 
   .omMigBilledeWrapper img {
@@ -634,7 +636,7 @@ main {
 }
 
 .tema2Intro p {
-  font-size: clamp(1rem, 5vw, 2rem);
+  font-size: clamp(0.8rem, 5vw, 1rem);
   margin-top: -1rem;
   margin-left: 1rem;
 }
@@ -645,14 +647,44 @@ main {
   color: WHITE;
 }
 
+.tema2knap1 {
+  cursor: pointer;
+  display: inline;
+  text-decoration: none;
+  color: white;
+  background-color: #39d16c;
+  padding: 0.4em 1.1em;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+}
+
+.tema2Intro {
+  margin-bottom: 2rem;
+}
+
+.tema2knap2 {
+  cursor: pointer;
+  display: inline;
+  text-decoration: none;
+  color: white;
+  background-color: #39d16c;
+  padding: 0.4em 1.1em;
+  border-radius: 0.5rem;
+}
+
 .tema2DokumentationTekst {
   margin: 1rem;
 }
 
 .tema2DokumentationTekst h2 {
+  font-size: clamp(2rem, 10vw, 3rem);
+  line-height: 3rem;
+  color: WHITE;
 }
 
 .tema2DokumentationTekst p {
+  font-size: clamp(1rem, 5vw, 1.2rem);
+  margin-top: -1rem;
 }
 
 @media (min-width: 800px) {
@@ -677,7 +709,7 @@ main {
   }
 
   .tema2BotWrapper {
-    margin-top: 4rem;
+    margin-top: 1rem;
     grid-column: 2;
     grid-row: 2;
   }
@@ -686,6 +718,10 @@ main {
     margin-top: 4rem;
     grid-column: 1;
     grid-row: 2;
+  }
+
+  .tema2DokumentationTekst h2 {
+    margin-top: -2rem;
   }
 }
 
@@ -696,7 +732,107 @@ main {
 }
 
 /* ------------------------------Tema 3-------------------------------------------- */
+.tema3H1 h1 {
+  font-size: clamp(3rem, 10vw, 4rem);
+  line-height: 3rem;
+  margin-left: 1rem;
+}
 
+.tema3Intro p {
+  font-size: clamp(0.8rem, 5vw, 1rem);
+  margin-top: -1rem;
+  margin-left: 1rem;
+}
+
+.tema3Intro h2 {
+  font-size: clamp(2rem, 10vw, 3rem);
+  line-height: 3rem;
+  color: WHITE;
+}
+
+.tema3knap1 {
+  cursor: pointer;
+  display: inline;
+  text-decoration: none;
+  color: white;
+  background-color: #39d16c;
+  padding: 0.4em 1.1em;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+}
+
+.tema3Intro {
+  margin-bottom: 2rem;
+}
+
+.tema3knap2 {
+  cursor: pointer;
+  display: inline;
+  text-decoration: none;
+  color: white;
+  background-color: #39d16c;
+  padding: 0.4em 1.1em;
+  border-radius: 0.5rem;
+}
+
+.tema3DokumentationTekst {
+  margin: 1rem;
+}
+
+.tema3DokumentationTekst h2 {
+  font-size: clamp(2rem, 10vw, 3rem);
+  line-height: 3rem;
+  color: WHITE;
+}
+
+.tema3DokumentationTekst p {
+  font-size: clamp(1rem, 5vw, 1.2rem);
+  margin-top: -1rem;
+}
+
+@media (min-width: 800px) {
+  .tema3MainGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+  }
+
+  .tema3TopWrapper {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .tema3H1 h1 {
+    line-height: 4rem;
+  }
+
+  .tema3ImgTopWrapper {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .tema3BotWrapper {
+    margin-top: 1rem;
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .tema3ImgBotWrapper {
+    margin-top: 4rem;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .tema3DokumentationTekst h2 {
+    margin-top: -2rem;
+  }
+}
+
+@media (min-width: 500px) {
+  .tema3H1 h1 {
+    line-height: 4rem;
+  }
+}
 @media (min-width: 800px) {
   .tema3MainGrid {
     display: grid;
@@ -706,7 +842,107 @@ main {
 }
 
 /* ------------------------------Tema 4-------------------------------------------- */
+.tema4H1 h1 {
+  font-size: clamp(3rem, 10vw, 4rem);
+  line-height: 3rem;
+  margin-left: 1rem;
+}
 
+.tema4Intro p {
+  font-size: clamp(0.8rem, 5vw, 1rem);
+  margin-top: -1rem;
+  margin-left: 1rem;
+}
+
+.tema4Intro h2 {
+  font-size: clamp(2rem, 10vw, 3rem);
+  line-height: 3rem;
+  color: WHITE;
+}
+
+.tema4knap1 {
+  cursor: pointer;
+  display: inline;
+  text-decoration: none;
+  color: white;
+  background-color: #39d16c;
+  padding: 0.4em 1.1em;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+}
+
+.tema4Intro {
+  margin-bottom: 2rem;
+}
+
+.tema4knap2 {
+  cursor: pointer;
+  display: inline;
+  text-decoration: none;
+  color: white;
+  background-color: #39d16c;
+  padding: 0.4em 1.1em;
+  border-radius: 0.5rem;
+}
+
+.tema4DokumentationTekst {
+  margin: 1rem;
+}
+
+.tema4DokumentationTekst h2 {
+  font-size: clamp(2rem, 10vw, 3rem);
+  line-height: 3rem;
+  color: WHITE;
+}
+
+.tema4DokumentationTekst p {
+  font-size: clamp(1rem, 5vw, 1.2rem);
+  margin-top: -1rem;
+}
+
+@media (min-width: 800px) {
+  .tema4MainGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+  }
+
+  .tema4TopWrapper {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .tema4H1 h1 {
+    line-height: 4rem;
+  }
+
+  .tema4ImgTopWrapper {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .tema4BotWrapper {
+    margin-top: 1rem;
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .tema4ImgBotWrapper {
+    margin-top: 4rem;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .tema4DokumentationTekst h2 {
+    margin-top: -2rem;
+  }
+}
+
+@media (min-width: 500px) {
+  .tema4H1 h1 {
+    line-height: 4rem;
+  }
+}
 @media (min-width: 800px) {
   .tema4MainGrid {
     display: grid;
