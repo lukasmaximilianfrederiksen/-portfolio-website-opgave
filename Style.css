@@ -96,6 +96,11 @@ p {
   margin-bottom: 0.5rem;
 }
 
+.opgaveNavn:hover {
+  border-bottom: 0.3rem solid #39d16c;
+  margin-bottom: 0.2rem;
+}
+
 /* Giv mine list items display flex for at kunne styrer hvordan de ligger i forhold
 til hvordan de ligger ved hinanden */
 .navbar .navLinks ul {
@@ -222,8 +227,9 @@ h1 {
 }
 
 .imgTopLeft {
-  background-image: url(billeder/0_7.jpg);
+  background-image: url(billeder/splashv2.jpg);
   background-size: cover;
+  background-position: 50%;
   padding: 8rem 0 0;
   border-radius: 1rem;
   overflow: hidden;
@@ -232,7 +238,7 @@ h1 {
 }
 
 .imgTopRight {
-  background-image: url(billeder/0_7.jpg);
+  background-image: url(billeder/uxforside.jpg);
   background-size: cover;
   padding: 8rem 0 0;
   max-width: 45ch;
@@ -242,8 +248,9 @@ h1 {
 }
 
 .imgBotLeft {
-  background-image: url(billeder/0_7.jpg);
+  background-image: url(billeder/start_skærm_final.svg);
   background-size: cover;
+  background-position: 95%;
   padding: 8rem 0 0;
   border-radius: 1rem;
   overflow: hidden;
@@ -252,8 +259,9 @@ h1 {
 }
 
 .imgBotRight {
-  background-image: url(billeder/0_7.jpg);
+  background-image: url(billeder/joulix.jpg);
   background-size: cover;
+  background-position: 10%;
   padding: 8rem 0 0;
   border-radius: 1rem;
   overflow: hidden;
@@ -347,7 +355,7 @@ h1 {
   padding: 2em;
   background: linear-gradient(
     hsl(0 0% 0% / 0),
-    hsl(30 0% 0% / 0.4) 25%,
+    hsl(30 0% 0% / 0.7) 25%,
     hsl(0 0% 0% /1)
   );
 }
@@ -697,6 +705,10 @@ main {
 }
 
 @media (min-width: 1000px) {
+  .navbar .navLinks ul {
+    padding: 0;
+  }
+
   .tema2MainGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -749,7 +761,7 @@ main {
 
 .tema3Intro p {
   font-size: clamp(0.8rem, 5vw, 0.9rem);
-  margin-top: -1rem;
+  margin-top: -0.5rem;
   margin-left: 1rem;
 }
 
@@ -796,7 +808,7 @@ main {
 
 .tema3DokumentationTekst p {
   font-size: clamp(0.8rem, 5vw, 0.9rem);
-  margin-top: -1rem;
+  margin-top: -1.5rem;
 }
 
 @media (min-width: 800px) {
@@ -855,10 +867,11 @@ main {
   font-size: clamp(3rem, 10vw, 4rem);
   line-height: 3rem;
   margin-left: 1rem;
+  max-width: 20ch;
 }
 
 .tema4Intro p {
-  font-size: clamp(0.8rem, 5vw, 1rem);
+  font-size: clamp(0.8rem, 5vw, 0.9rem);
   margin-top: -1rem;
   margin-left: 1rem;
 }
@@ -905,7 +918,7 @@ main {
 }
 
 .tema4DokumentationTekst p {
-  font-size: clamp(1rem, 5vw, 1.2rem);
+  font-size: clamp(0.8rem, 5vw, 0.9rem);
   margin-top: -1rem;
 }
 
@@ -952,20 +965,114 @@ main {
     line-height: 4rem;
   }
 }
-@media (min-width: 800px) {
-  .tema4MainGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-}
 
 /* ------------------------------Tema 5-------------------------------------------- */
+.tema5H1 h1 {
+  font-size: clamp(3rem, 10vw, 4rem);
+  line-height: 3rem;
+  margin-left: 1rem;
+  max-width: 20ch;
+}
+
+.tema5Intro p {
+  font-size: clamp(0.8rem, 5vw, 0.9rem);
+  margin-top: -1rem;
+  margin-left: 1rem;
+}
+
+.tema5Intro h2 {
+  font-size: clamp(2rem, 10vw, 3rem);
+  line-height: 3rem;
+  color: WHITE;
+}
+
+.tema5knap1 {
+  cursor: pointer;
+  display: inline;
+  text-decoration: none;
+  color: white;
+  background-color: #39d16c;
+  padding: 0.4em 1.1em;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+}
+
+.tema5Intro {
+  margin-bottom: 2rem;
+}
+
+.tema5knap2 {
+  cursor: pointer;
+  display: inline;
+  text-decoration: none;
+  color: white;
+  background-color: #39d16c;
+  padding: 0.4em 1.1em;
+  border-radius: 0.5rem;
+}
+
+.tema5DokumentationTekst {
+  margin: 1rem;
+}
+
+.tema5DokumentationTekst h2 {
+  font-size: clamp(2rem, 10vw, 3rem);
+  line-height: 3rem;
+  color: WHITE;
+}
+
+.tema5DokumentationTekst p {
+  font-size: clamp(0.8rem, 5vw, 0.9rem);
+  margin-top: -1rem;
+}
 
 @media (min-width: 800px) {
   .tema5MainGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 50px;
+  }
+  .tema5TopWrapper {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .tema5H1 h1 {
+    line-height: 4rem;
+  }
+
+  .tema5ImgTopWrapper {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .tema5BotWrapper {
+    margin-top: 1rem;
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .tema5ImgBotWrapper {
+    margin-top: 4rem;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .tema5DokumentationTekst h2 {
+    margin-top: -2rem;
+  }
+
+  .tema5ReflektionGridWrapper {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+  }
+
+  .tema5Reflektionh2Wrapper {
+    grid-column: 1;
+  }
+  .tema5ReflektionTekstWrapper {
+    grid-column: 2/3;
   }
 }
