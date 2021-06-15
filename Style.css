@@ -106,9 +106,8 @@ p {
   margin-bottom: 0.5rem;
 }
 
-.opgaveNavn:hover {
-  border-bottom: 0.3rem solid #39d16c;
-  margin-bottom: 0.2rem;
+.opgaveNavn a:hover {
+  color: #fd7603;
 }
 
 /* Giv mine list items display flex for at kunne styrer hvordan de ligger i forhold
@@ -140,7 +139,7 @@ til hvordan de ligger ved hinanden */
 }
 
 .navbar .navLinks li:hover {
-  border-bottom: 0.3rem solid #39d16c;
+  border-bottom: 0.3rem solid #fd7603;
 }
 
 .navbar .navLinks li:hover {
@@ -419,7 +418,7 @@ h1 {
   display: inline;
   text-decoration: none;
   color: white;
-  background-color: #ff4447;
+  background-color: #39d16c;
   padding: 0.5em 1.1em;
   border-radius: 0.5rem;
 }
@@ -514,7 +513,6 @@ h1 {
     grid-template-rows: 1fr 1fr 1fr;
     gap: 2rem;
     margin-left: 1rem;
-    margin-top: -5rem;
   }
 
   .projektTekstWrapper {
@@ -735,6 +733,33 @@ main {
   margin-top: -1rem;
 }
 
+.tema2ReflektionGridWrapper {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.tema2Reflektionh2Wrapper h2 {
+  font-size: clamp(2rem, 10vw, 3rem);
+  color: white;
+  margin-top: 0;
+}
+
+.tema2Reflektionh2Wrapper p {
+  font-size: clamp(1rem, 5vw, 0.9rem);
+  color: white;
+  margin-top: -2rem;
+}
+
+.tema2Reflektionh2Wrapper ul li {
+  color: white;
+  padding: 0.3rem;
+}
+
+.tema2Reflektionh2Wrapper ul {
+  margin-left: -1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 @media (min-width: 1000px) {
   .tema2DokumentationTekst {
     margin: 0;
@@ -777,6 +802,24 @@ main {
 
   .tema2DokumentationTekst h2 {
     margin-top: -2rem;
+  }
+  .tema2ReflektionGridWrapper {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+  }
+
+  .tema2eflektionh2Wrapper {
+    grid-column: 1;
+  }
+
+  .tema2ReflektionTekstWrapper {
+    grid-column: 2/3;
+  }
+
+  .tema2ReflektionTekstWrapper p {
+    margin-top: 5rem;
   }
 }
 
@@ -848,6 +891,33 @@ main {
   margin-top: -1.5rem;
 }
 
+.tema3ReflektionGridWrapper {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.tema3Reflektionh2Wrapper h2 {
+  font-size: clamp(2rem, 10vw, 3rem);
+  color: white;
+  margin-top: 0;
+}
+
+.tema3Reflektionh2Wrapper p {
+  font-size: clamp(1rem, 5vw, 0.9rem);
+  color: white;
+  margin-top: -2rem;
+}
+
+.tema3Reflektionh2Wrapper ul li {
+  color: white;
+  padding: 0.3rem;
+}
+
+.tema3Reflektionh2Wrapper ul {
+  margin-left: -1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 @media (min-width: 1000px) {
   .tema3DokumentationTekst {
     margin: 0;
@@ -887,6 +957,25 @@ main {
 
   .tema3DokumentationTekst h2 {
     margin-top: -2rem;
+  }
+
+  .tema3ReflektionGridWrapper {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+  }
+
+  .tema3Reflektionh2Wrapper {
+    grid-column: 1;
+  }
+
+  .tema3ReflektionTekstWrapper {
+    grid-column: 2/3;
+  }
+
+  .tema3ReflektionTekstWrapper p {
+    margin-top: 5rem;
   }
 }
 
