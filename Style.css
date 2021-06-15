@@ -21,6 +21,9 @@ video {
   display: block;
   width: 100%;
   height: auto;
+  object-fit: contain;
+  max-width: 70vw;
+  margin: auto;
 }
 
 footer {
@@ -66,7 +69,7 @@ footer {
 .forsideIntroTekst {
   margin: 1rem;
   max-width: 60ch;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 .opgaveNavn p {
   font-size: 1.5rem;
@@ -239,7 +242,7 @@ h1 {
   padding: 8rem 0 0;
   border-radius: 1rem;
   overflow: hidden;
-  margin: 1rem;
+  margin: 2rem;
   max-width: 45ch;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.37);
 }
@@ -251,7 +254,7 @@ h1 {
   max-width: 45ch;
   border-radius: 1rem;
   overflow: hidden;
-  margin: 1rem;
+  margin: 2rem;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.37);
 }
 
@@ -262,7 +265,7 @@ h1 {
   padding: 8rem 0 0;
   border-radius: 1rem;
   overflow: hidden;
-  margin: 1rem;
+  margin: 2rem;
   max-width: 45ch;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.37);
 }
@@ -274,7 +277,7 @@ h1 {
   padding: 8rem 0 0;
   border-radius: 1rem;
   overflow: hidden;
-  margin: 1rem;
+  margin: 2rem;
   max-width: 45ch;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.37);
 }
@@ -405,7 +408,7 @@ h1 {
   display: inline;
   text-decoration: none;
   color: white;
-  background-color: #39d16c;
+  background-color: #ff4447;
   padding: 0.5em 1.1em;
   border-radius: 0.5rem;
 }
@@ -434,11 +437,14 @@ h1 {
     flex-direction: column;
   }
 
-  .navbar .navLinks li a {
-    font-size: 1rem;
-  }
   .forsideUndertitel {
     padding-top: 1rem;
+  }
+
+  @media (min-width: 900px) {
+    .navbar .navLinks li a {
+      font-size: 1rem;
+    }
   }
 
   /* ------------Forside Top Grid------------ */
@@ -480,6 +486,8 @@ h1 {
     display: grid;
     grid-column: 1/4;
     grid-row: 3;
+
+    margin-left: 2rem;
   }
 
   /* ---------------------projekt billeder grid -------- */
@@ -979,7 +987,7 @@ main {
 /* ------------------------------Tema 5-------------------------------------------- */
 .tema5H1 h1 {
   font-size: clamp(3rem, 10vw, 4rem);
-  line-height: 3rem;
+  line-height: 4rem;
   margin-left: 1rem;
   max-width: 20ch;
 }
@@ -1024,12 +1032,23 @@ main {
 .tema5Reflektionh2Wrapper h2 {
   font-size: clamp(2rem, 10vw, 3rem);
   color: white;
+  margin-top: 0;
+}
+
+.tema5Reflektionh2Wrapper p {
+  font-size: clamp(1rem, 5vw, 1.2rem);
+  color: white;
+  margin-top: -3rem;
 }
 
 .tema5Reflektionh2Wrapper ul li {
   color: white;
+  padding: 0.3rem;
 }
 
+.tema5Reflektionh2Wrapper ul {
+  margin-left: -1.5rem;
+}
 .tema5DokumentationTekst {
   margin: 1rem;
 }
@@ -1043,6 +1062,12 @@ main {
 .tema5DokumentationTekst p {
   font-size: clamp(0.8rem, 5vw, 0.9rem);
   margin-top: -1rem;
+}
+
+.videoWrapper h2 {
+  font-size: clamp(2rem, 10vw, 3rem);
+  line-height: 3rem;
+  color: WHITE;
 }
 
 @media (min-width: 800px) {
