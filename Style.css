@@ -8,13 +8,19 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #111;
+  background-color: rgb(19, 19, 19);
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
 }
 
 img {
   max-width: 100%;
+}
+
+video {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 footer {
@@ -81,7 +87,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #111;
+  background-color: rgb(19, 19, 19);
   color: white;
   position: fixed;
   top: 0;
@@ -112,7 +118,7 @@ til hvordan de ligger ved hinanden */
 }
 
 .navbar ul {
-  background-color: #111;
+  background-color: rgb(19, 19, 19);
 }
 
 .navbar .navLinks li {
@@ -1015,6 +1021,15 @@ main {
   border-radius: 0.5rem;
 }
 
+.tema5Reflektionh2Wrapper h2 {
+  font-size: clamp(2rem, 10vw, 3rem);
+  color: white;
+}
+
+.tema5Reflektionh2Wrapper ul li {
+  color: white;
+}
+
 .tema5DokumentationTekst {
   margin: 1rem;
 }
@@ -1073,9 +1088,15 @@ main {
     gap: 2rem;
   }
 
+  .videoWrapper {
+    margin-top: 3rem;
+    grid-column: 1/3;
+  }
+
   .tema5Reflektionh2Wrapper {
     grid-column: 1;
   }
+
   .tema5ReflektionTekstWrapper {
     grid-column: 2/3;
   }
