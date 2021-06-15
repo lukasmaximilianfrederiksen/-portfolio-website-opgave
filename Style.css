@@ -81,6 +81,7 @@ footer {
 }
 p {
   color: white;
+  opacity: 0.9;
   font-size: 0.9rem;
   font-family: "Montserrat", sans-serif;
 }
@@ -613,9 +614,12 @@ h1 {
 }
 
 .omMigTopWrapper p {
-  font-size: clamp(0.8rem, 5vw, 0.9rem);
   margin-top: -1rem;
   margin-left: 1rem;
+
+  font-size: clamp(1.3rem, 3vw, 2.5rem);
+  color: white;
+  opacity: 0.7;
 }
 
 .omMigTekstWrapper h2 {
@@ -953,6 +957,34 @@ main {
   margin-top: -1rem;
 }
 
+.tema4ReflektionGridWrapper {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.tema4Reflektionh2Wrapper h2 {
+  font-size: clamp(2rem, 10vw, 3rem);
+  color: white;
+  margin-top: 0;
+}
+
+.tema4Reflektionh2Wrapper p {
+  font-size: clamp(1rem, 5vw, 0.9rem);
+  color: white;
+  margin-top: -2rem;
+}
+
+.tema4Reflektionh2Wrapper ul li {
+  color: white;
+  padding: 0.3rem;
+}
+
+.tema4Reflektionh2Wrapper ul {
+  margin-left: -1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 @media (min-width: 800px) {
   .tema4MainGrid {
     display: grid;
@@ -988,6 +1020,25 @@ main {
 
   .tema4DokumentationTekst h2 {
     margin-top: -2rem;
+  }
+
+  .tema4ReflektionGridWrapper {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+  }
+
+  .tema4Reflektionh2Wrapper {
+    grid-column: 1;
+  }
+
+  .tema4ReflektionTekstWrapper {
+    grid-column: 2/3;
+  }
+
+  .tema4ReflektionTekstWrapper p {
+    margin-top: 5rem;
   }
 }
 
@@ -1062,6 +1113,8 @@ main {
 
 .tema5Reflektionh2Wrapper ul {
   margin-left: -1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .tema5DokumentationTekst {
   margin: 1rem;
@@ -1090,7 +1143,7 @@ main {
   margin-right: 1rem;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .tema5MainGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
