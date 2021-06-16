@@ -869,6 +869,7 @@ main {
   font-size: clamp(2rem, 10vw, 3rem);
   line-height: 3rem;
   color: WHITE;
+  max-width: 20ch;
 }
 
 .tema3knap1 {
